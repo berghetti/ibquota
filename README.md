@@ -11,13 +11,13 @@ Instalação
 
 1 - Executar os processos de instalação dos pacotes.
 
-    $ sudo apt-get install apache2 build-essential cups pkpgcounter mysql-server php libdbd-mysql-perl libnet-ldap-perl php-ldap
+    $ sudo apt-get install apache2 build-essential cups pkpgcounter mysql-server php php-mysql libdbd-mysql-perl libnet-ldap-perl php-ldap
 
 1.1 - """(APENAS se o pacote pkpgcounter não exister em sua distribuição, ex CentOS)""" Instalação manual do contador de páginas pkpgcounter:
 
     $ cd /tmp
-    $ wget http://www.pykota.com/software/pkpgcounter/download/tarballs/pkpgcounter-3.50.tar.gz
-    $ tar -zxf pkpgcounter-3.50.tar.gz
+    $ wget https://github.com/berghetti/pkpgcounter/archive/master.zip
+    $ tar -zxf pkpgcounter-master.zip
     $ cd pkpgcounter-3.50
     $ python setup.py install
 
